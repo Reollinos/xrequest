@@ -1,33 +1,35 @@
 # xrequest
 
-Biblioteca simples para requisições HTTP assíncronas.
+Simple library for asynchronous HTTP requests.
 
-## Instalação
+## Installation
 
 ```bash
 pip install xrequest
+
 ```
 
-## Uso
+## Usage
 
-### Sem Session
+### Without Session
 ```python
 import xrequest
 
 response = await xrequest.get("https://api.example.com")
 ```
 
-### Com Session (reutilizar conexão)
+### With Session (reuse connection)
 ```python
 import xrequest
 
 session = xrequest.Session()
 try:
-    response = await session.get("https://api.example.com")
+response = await session.get("https://api.example.com")
 finally:
-    await session.close()
+await session.close()
 ```
 
-## Licença
+## License
 
 MIT
+ 
