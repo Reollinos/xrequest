@@ -24,9 +24,9 @@ import xrequest
 
 session = xrequest.Session()
 try:
-response = await session.get("https://api.example.com")
+    response = await.session.get("https://api.example.com")
 finally:
-await session.close()
+    await session.close()
 ```
 
 ## License
