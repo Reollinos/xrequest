@@ -28,6 +28,17 @@ try:
 finally:
     await session.close()
 ```
+For now, request is a library that only works for async functions.
+´´´python
+async def get(
+    url: str | list,
+    timeout: int = 5,
+    headers: dict | None = None,
+    follow_redirects: bool = True,
+    retries: int = 0,
+    session: bool | None = None):
+´´´
+
 
 ## License
 
