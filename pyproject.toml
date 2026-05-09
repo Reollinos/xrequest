@@ -1,6 +1,6 @@
 [project]
 name = "xrequest"
-version = "0.0.1"
+version = "0.0.3"
 description = "Simple httpx for lazy people"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -9,6 +9,7 @@ authors = [{name = "Reollinos"}]
 dependencies = []
 
 [project.urls]
+Homepage = "https://github.com/Reollinos/xrequest"
 Repository = "https://github.com/Reollinos/xrequest"
 
 [build-system]
