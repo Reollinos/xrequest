@@ -71,3 +71,7 @@ dmypy.json
 .env
 .env.local
 *.log
+
+# visual
+tests/
+.schizophenia
