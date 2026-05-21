@@ -13,10 +13,10 @@ class ResponseWrapper:
         # textos html
         @property
         def text(self):
-            if isinstance(self._url, list) and len(self._url) > 1:
-                return self._result.text
-            
-            elif isinstance(self._url, list) and len(self._url) == 1 or isinstance(self._url, str):
+            if isinstance(self._url, (list)) and len(self._url) > 1:
+                return [r.text for r in self._result]
+                
+            elif isinstance(self._url, (list)) and len(self._url) == 1 or isinstance(self._url, str):
                 return self._result[0].text
 
         # status do site

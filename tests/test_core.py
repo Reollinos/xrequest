@@ -5,13 +5,9 @@ from xrequest.utils.base_headers import HEADERS
 
 
 async def test():
-    j = {
-      "title": "Meu post",
-      "body": "Olá mundo",
-      "userId": 1
-    }
-    sites = await xrequest.get('https://httpbin.org/')
-    s = sites.status_code
+
+    sites = await xrequest.get(['https://httpbin.org/','https://httpbin.org/','https://httpbin.org/'])
+    s = sites.text
     print(s)
 
 

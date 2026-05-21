@@ -6,7 +6,7 @@ from .box.var_box import SCRIPT_NAME as label
 from .box.preferences import ResponseWrapper
 
 '''
-version 0.2.0;
+version 0.2.1;
 '''
 
 # modulo de sessão

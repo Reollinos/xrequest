@@ -1,2 +1,0 @@
-Amanhã, botar preferences em class e modernizar
-adicionar ifs no retry e retries
