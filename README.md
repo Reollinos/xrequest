@@ -30,7 +30,7 @@ finally:
 ```
 For now, request is a library that only works for async functions.
 # values
-´´´
+```
 async def get(
     url: str | list,
     timeout: int = 5,
@@ -38,7 +38,7 @@ async def get(
     follow_redirects: bool = True,
     retries: int = 0,
     session: bool | None = None):
-´´´
+```
 
 
 ## License
