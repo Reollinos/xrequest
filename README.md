@@ -30,7 +30,7 @@ finally:
 ```
 For now, request is a library that only works for async functions.
 # values
-```
+```python
 async def get(
     url: str | list,
     timeout: int = 5,
